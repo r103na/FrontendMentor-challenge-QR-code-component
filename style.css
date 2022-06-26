@@ -1,0 +1,82 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lgtray: hsl(212, 45%, 89%);
+    --grayblue: hsl(220, 15%, 55%);
+    --dkblue: hsl(218, 44%, 22%);
+    --fs-p: 1em;
+
+    font-family: "Outfit", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+    /* min-height: 100vh; */
+    line-height: 1.4;
+    background-color: var(--lgtray);
+}
+
+.card {
+    background-color: var(--white); 
+    margin: 2em auto;
+    width: 22.5em;
+    padding: 1em 1.5em 0.375em;
+    border-radius: 1em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0px 0px 24px 0px rgba(34, 60, 80, 0.2);
+
+}
+
+img {
+    border-radius: 0.825em;
+    width: 100%;
+    margin: auto;
+}
+
+.description {
+    padding: 1.825em 1em;
+    text-align: center;
+}
+
+
+h2 {
+    font-weight: 700;
+    color: var(--dkblue);
+    padding-bottom: 0.735em;
+
+}
+
+p {
+    color: var(--grayblue);
+    font-size: var(--fs-p);
+    font-weight: 400;
+    padding-bottom: 0em;
+}
